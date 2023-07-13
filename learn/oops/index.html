@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script src="ex2.js"></script>
+
+    <script>
+        const Person = function(radius){
+            this.radius = radius;
+
+            this.draw = function(){
+                console.log("draw")
+            }
+        }
+
+        Person.prototype.write = function(){
+            console.log("write")
+        }
+        p1=new Person(5)
+        console.log(p1)
+    </script>
+</body>
+</html>
