@@ -1,29 +1,7 @@
-const _items = new WeakMap();
-class Stack{
-    constructor(){
-        _items.set(this,[])
-    }
-    push(a){
-        _items.get(this).push(a)
-    }
+import { Stack } from './stack.js'
 
-    pop(){
-       const  items = _items.get(this)
-       if(items.length <=0 ){
-        throw new Error("no items in stack")
-       }
-        _items.get(this).splice(items.length - 1,1);
-        return items[items.length - 1]
-    }
 
-    peek(){
-        const r = _items.get(this)
-        return r[r.length - 1];
-    }
-    get count (){
-        return _items.get(this).length;
-    }
+const s=new Stack()
+let abc = "5";
+s.draw()
 
-}
-
-s=new Stack()

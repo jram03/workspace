@@ -196,3 +196,16 @@ function countocc(a,x){
 
 // console.log(circle.area)
 
+const Person = function(radius){
+    this.radius = radius;
+
+    this.draw = function(){
+        console.log("draw")
+    }
+}
+
+Person.prototype.write = function(){
+    console.log("write")
+}
+p1=new Person(5)
+console.log(p1)
