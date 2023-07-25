@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "@types/faker": "^6.6.9",
+    "faker": "^6.6.6",
+    "nodemon": "^2.0.22"
+  },
+  "devDependencies": {
+    "typescript": "^5.1.6"
+  }
+}
