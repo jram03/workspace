@@ -31,7 +31,6 @@ export function StoreItem({id,name,price,image} : StoreItemProps){
                         <span className="fs-3">{quantity}</span>in cart
                         <Button onClick={()=>increaseCartQuantity(id)}>+</Button>  
                     </div>
-                    <Button onClick={()=>removeFromCart(id)} variant="danger" size="sm" >Remove</Button>
             </div>}
             </div>
         </Card.Body>
